@@ -13,7 +13,7 @@
   };
 
   try {
-    const response = await fetch(new URL("videos.json", document.baseURI));
+    const response = await fetch(new URL("videos.json", document.baseURI), { cache: "no-store" });
     if (!response.ok) throw new Error(`Video manifest: HTTP ${response.status}`);
     const sources = await response.json();
 
