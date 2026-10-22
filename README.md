@@ -1,21 +1,21 @@
 # Bristol-VLA Demo
 
-Bristol-VLA 的公开论文展示页。研究代码保留在独立 private 仓库中。
+Public paper showcase for Bristol-VLA. The research code is kept in a separate private repository.
 
-[在线页面](https://aoli0919.github.io/Bristol-VLA-demo/)
+[Live site](https://aoli0919.github.io/Bristol-VLA-demo/)
 
-## 本地预览
+## Local preview
 
-在仓库根目录运行 `python3 -m http.server 8000`，打开 <http://localhost:8000>。
+Run `python3 -m http.server 8000` from the repository root, then open <http://localhost:8000>.
 
-## 更新内容与视频
+## Updating content and videos
 
-- 在 `index.html` 替换论文标题、作者、单位、贡献脚注、Abstract 等占位内容。
-- 在 `videos.json` 填写四个视频：`overview` 为主视频，`task1`、`task2`、`task3` 为三个任务视频。当前 `src`、`poster` 全部留空。
-- `src` 填视频文件直链或相对路径（如 `assets/videos/overview.mp4`），`poster` 填可选封面路径；`src` 留空时保留占位。
+- Replace the placeholder paper title, authors, affiliations, contribution footnotes, Abstract, and other content in `index.html`.
+- Add the four videos to `videos.json`: `overview` is the main video; `task1`, `task2`, and `task3` are the three task videos. All `src` and `poster` fields are currently empty.
+- Set `src` to a direct video URL or relative path (for example, `assets/videos/overview.mp4`). Set `poster` to an optional poster image path. If `src` is empty, the placeholder remains.
 
-## 检查与发布
+## Checks and publishing
 
-运行 `python3 scripts/check_site.py` 检查资源、导航与视频清单。
+Run `python3 scripts/check_site.py` to check assets, navigation, and the video manifest.
 
-推送到 `main` 后自动上线 GitHub Pages。
+The site is published automatically to GitHub Pages when changes are pushed to `main`.

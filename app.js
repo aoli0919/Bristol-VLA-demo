@@ -26,7 +26,7 @@
       video.controls = true;
       video.playsInline = true;
       video.preload = "metadata";
-      video.setAttribute("aria-label", `${slot.dataset.videoTitle}视频`);
+      video.setAttribute("aria-label", `${slot.dataset.videoTitle} video`);
       const poster = safeMediaUrl(entry.poster);
       if (poster) video.poster = poster;
       video.src = src;
@@ -37,7 +37,7 @@
         const notice = document.createElement("p");
         notice.className = "media-error";
         notice.setAttribute("role", "status");
-        notice.textContent = "视频暂时无法加载，请稍后再试。";
+        notice.textContent = "This video could not be loaded. Please try again later.";
         slot.append(notice);
       }, { once: true });
 
