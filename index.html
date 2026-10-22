@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bristol-VLA：基于 π0.5 的视觉—语言—动作研究。项目概览、研究流程与机器人任务演示。">
+  <meta name="theme-color" content="#92263c">
+  <title>Bristol-VLA · 视觉、语言与机器人行动</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="主导航">
+      <a class="wordmark" href="#top" aria-label="Bristol-VLA 首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        Bristol-VLA
+      </a>
+      <div class="nav-links">
+        <a href="#overview">项目概览</a>
+        <a href="#demos">演示</a>
+        <a href="#resources">研究资料</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="project-title">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ROBOT LEARNING · BRISTOL</p>
+      <h1 id="project-title">Bristol<span>-VLA</span></h1>
+      <p class="hero-title">从视觉与语言，<br class="mobile-break">到机器人行动</p>
+      <p class="hero-description">基于 π0.5，探索任务、数据与机器人之间的连接。</p>
+      <div class="affiliation">
+        <span>University of Bristol</span>
+        <span class="affiliation-divider" aria-hidden="true"></span>
+        <span>Bristol-VLA 项目组</span>
+      </div>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#demos">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 5 8 5-8 5Z"/></svg>
+          项目演示
+        </a>
+        <a class="button button-dark" href="https://github.com/aoli0919/Bristol-VLA" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.3.8-.6v-2.1c-3.4.7-4.1-1.4-4.1-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.5 1.2-3.3-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.3a11.7 11.7 0 0 1 6.2 0c2.4-1.6 3.4-1.3 3.4-1.3.6 1.7.2 3 .1 3.3.8.9 1.2 2 1.2 3.3 0 4.7-2.9 5.8-5.6 6.1.4.4.8 1.1.8 2.2V22c0 .3.2.7.8.6A11.2 11.2 0 0 0 12 .8Z"/></svg>
+          Code <span class="private-label">Private</span>
+        </a>
+        <a class="button button-outline" href="https://arxiv.org/abs/2504.16054" target="_blank" rel="noopener noreferrer">π0.5 论文 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="container teaser" aria-label="项目概览视频">
+      <figure>
+        <div class="media-slot media-slot-main" data-video-slot="overview" data-video-title="项目概览">
+          <div class="media-placeholder" role="img" aria-label="项目概览视频，待补充">
+            <span class="frame-corner corner-tl" aria-hidden="true"></span>
+            <span class="frame-corner corner-br" aria-hidden="true"></span>
+            <span class="media-eyebrow">BRISTOL-VLA / PROJECT FILM</span>
+            <span class="play-outline" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 9 6-9 6Z"/></svg></span>
+            <span class="placeholder-title">项目概览视频</span>
+            <span class="placeholder-note">视频待补充</span>
+            <span class="media-bottom-label" aria-hidden="true">VISION <span>·</span> LANGUAGE <span>·</span> ACTION</span>
+          </div>
+        </div>
+        <figcaption class="teaser-caption"><span>从模型复现到任务执行</span><span class="caption-status">演示内容将陆续补充</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="section overview-section" id="overview" aria-labelledby="overview-title">
+      <div class="container narrow">
+        <p class="section-label">01 / OVERVIEW</p>
+        <h2 id="overview-title">以任务为起点，让实验可复现。</h2>
+        <p class="section-intro">Bristol-VLA 围绕视觉—语言—动作模型开展机器人研究。我们以已有的 π0.5 本地复现为起点，逐步完成数据适配、任务微调与统一评估，并记录硬件、代码和实验之间的对应关系。</p>
+        <p class="project-note"><span aria-hidden="true">↳</span> 当前处于项目搭建阶段，具体任务、视频和实测结果待补充。</p>
+      </div>
+
+      <div class="container pipeline" aria-label="研究流程：任务与数据、模型基线、微调适配、统一评估">
+        <div class="pipeline-step"><span class="step-number">01</span><h3>任务与数据</h3><p>明确任务、观测与动作<br>整理数据和硬件配置</p></div>
+        <span class="pipeline-arrow" aria-hidden="true">→</span>
+        <div class="pipeline-step"><span class="step-number">02</span><h3>π0.5 基线</h3><p>固定可运行的版本<br>记录环境与复现条件</p></div>
+        <span class="pipeline-arrow" aria-hidden="true">→</span>
+        <div class="pipeline-step"><span class="step-number">03</span><h3>微调适配</h3><p>面向目标任务调整<br>保留配置与实验记录</p></div>
+        <span class="pipeline-arrow" aria-hidden="true">→</span>
+        <div class="pipeline-step"><span class="step-number">04</span><h3>统一评估</h3><p>在相同协议下比较<br>分析结果与失败原因</p></div>
+      </div>
+    </section>
+
+    <section class="section demos-section" id="demos" aria-labelledby="demos-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-label">02 / DEMONSTRATIONS</p><h2 id="demos-title">任务演示</h2></div>
+          <p class="section-side-note">三个展示位置，等待实验片段。</p>
+        </div>
+        <div class="demo-grid">
+          <figure class="demo-item">
+            <div class="media-slot" data-video-slot="baseline" data-video-title="基线推理">
+              <div class="media-placeholder" role="img" aria-label="基线推理视频，待补充"><span class="slot-number" aria-hidden="true">01</span><span class="play-outline" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 9 6-9 6Z"/></svg></span><span class="placeholder-note">视频待补充</span></div>
+            </div>
+            <figcaption><h3>基线推理</h3><p>π0.5 的输入、输出与推理过程。</p></figcaption>
+          </figure>
+          <figure class="demo-item">
+            <div class="media-slot" data-video-slot="finetuning" data-video-title="任务微调">
+              <div class="media-placeholder" role="img" aria-label="任务微调视频，待补充"><span class="slot-number" aria-hidden="true">02</span><span class="play-outline" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 9 6-9 6Z"/></svg></span><span class="placeholder-note">视频待补充</span></div>
+            </div>
+            <figcaption><h3>任务微调</h3><p>适配目标任务后的行为与对照。</p></figcaption>
+          </figure>
+          <figure class="demo-item">
+            <div class="media-slot" data-video-slot="robot" data-video-title="机器人执行">
+              <div class="media-placeholder" role="img" aria-label="机器人执行视频，待补充"><span class="slot-number" aria-hidden="true">03</span><span class="play-outline" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 9 6-9 6Z"/></svg></span><span class="placeholder-note">视频待补充</span></div>
+            </div>
+            <figcaption><h3>机器人执行</h3><p>真实场景中的任务执行与评估。</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resources-section" id="resources" aria-labelledby="resources-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-label">03 / RESEARCH</p><h2 id="resources-title">研究资料</h2></div><a class="text-link" href="https://github.com/Physical-Intelligence/openpi" target="_blank" rel="noopener noreferrer">π0.5 官方实现 <span aria-hidden="true">↗</span></a></div>
+        <div class="paper-list">
+          <a href="https://arxiv.org/abs/2504.16054" target="_blank" rel="noopener noreferrer"><span class="paper-year">2025</span><span><strong>π0.5</strong><span class="paper-title">A Vision-Language-Action Model with Open-World Generalization</span></span><span class="paper-arrow" aria-hidden="true">↗</span></a>
+          <a href="https://arxiv.org/abs/2410.24164" target="_blank" rel="noopener noreferrer"><span class="paper-year">2024</span><span><strong>π0</strong><span class="paper-title">A Vision-Language-Action Flow Model for General Robot Control</span></span><span class="paper-arrow" aria-hidden="true">↗</span></a>
+          <a href="https://arxiv.org/abs/2406.09246" target="_blank" rel="noopener noreferrer"><span class="paper-year">2024</span><span><strong>OpenVLA</strong><span class="paper-title">An Open-Source Vision-Language-Action Model</span></span><span class="paper-arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <p class="resource-note">以上为项目参考论文。项目成员、具体实验和成果信息将在确认后更新。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="wordmark" href="#top">Bristol-VLA</a><p>University of Bristol <span aria-hidden="true">/</span> Vision · Language · Action</p><a href="https://github.com/aoli0919/Bristol-VLA-demo" target="_blank" rel="noopener noreferrer">页面源码 <span aria-hidden="true">↗</span></a></div>
+  </footer>
+</body>
+</html>
